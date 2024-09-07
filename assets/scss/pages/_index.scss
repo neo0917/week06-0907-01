@@ -1,0 +1,198 @@
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner.png?raw=true);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.banner-text {
+  padding: 228px 0 228px 60px;
+}
+
+@media (max-width: 992px){ 
+  .banner {
+   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner-sm.png?raw=true);
+  }
+
+  .banner-text {
+    padding: 337px 0 48px 0;
+    text-align: center;
+  }
+}
+
+// 熱門主題
+.hot-topic-1 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1.png?raw=true");
+}
+.hot-topic-2 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3.png?raw=true");
+}
+.hot-topic-3 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5.png?raw=true");
+}
+.hot-topic-4 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8.png?raw=true");
+}
+.hot-topic-5 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2.png?raw=true");
+}
+.hot-topic-6 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4.png?raw=true");
+}
+.hot-topic-7 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6.png?raw=true");
+}
+.hot-topic-8 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7.png?raw=true");
+}
+.hot-topic {
+  height: 200px;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.z-index {
+  z-index: 1;
+}
+.hot-topic::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: RGBA(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.hot-topic:hover::after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){ 
+  .hot-topic {
+    height: 84px;
+  }
+  .hot-topic-1 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-1-sm.png?raw=true");
+  }
+  .hot-topic-2 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-3-sm.png?raw=true");
+  }
+  .hot-topic-3 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-5-sm.png?raw=true");
+  }
+  .hot-topic-4 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-8-sm.png?raw=true");
+  }
+  .hot-topic-5 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-2-sm.png?raw=true");
+  }
+  .hot-topic-6 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-4-sm.png?raw=true");
+  }
+  .hot-topic-7 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-6-sm.png?raw=true");
+  }
+  .hot-topic-8 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/theme-7-sm.png?raw=true");
+  }
+}
+// 熱門主題
+
+// 精選文章
+
+.swiper-img {
+  height: 192px;
+  object-fit: cover;
+}
+.swiper-pagination {
+  width: 232px;
+  position: relative;
+}
+.swiper-pagination::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #6c757d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-prev:hover {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+.swiper-next:hover {
+  background-color: #6c757d;
+  color: #DEE2E6;
+}
+.only-staff {
+  background: #e8e3da;
+}
+
+@media (max-width: 768px){ 
+  .swiper-pagination::after{
+    display: none;
+  }
+}
+//大家都在看
+
+.nav {
+  box-shadow: 0px 2px 8px #6e6b6714;
+}
+.nav-link:hover {
+  color: #569573;
+}
+
+.text li a:hover{
+  color: #569573;
+}
+.nav-pills .nav-link.active {
+  color: #212529;
+  background-color: #e0efde;
+}
+.nav-pills {
+  border-radius: 4px;
+}
+
+.tab-pane .img {
+  gap: 4px;
+}
+.tab-pane .img li:first-child img {
+  border-radius: 20px 0 0 20px;
+}
+.tab-pane .img li:last-child img {
+  border-radius: 0 20px 20px 0;
+}
+.section-footer li a {
+  color: #6e6b67; 
+  background-color: #e8e3da; 
+}
+.section-footer li a:hover {
+  color: #ffffff; 
+  background-color: #6e6b67;
+}
+
+
+@media (max-width: 992px){ 
+.tab-pane .img li:first-child img {
+  border-radius: 4px 0 0 4px;
+}
+}
+
+//生活風格
+
+.style-text {
+  padding: 210px 0px;
+}
+
+@media (max-width: 992px){ 
+  .style-text {
+    padding: 48px 0px;
+  }
+  }

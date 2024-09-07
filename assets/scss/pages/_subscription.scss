@@ -1,0 +1,76 @@
+
+.slash {
+    padding: 0px 4px;
+}
+
+.title-btn {
+    padding: 12px 80px;
+    background-color: #569573;
+    color: #FFFFFF;
+}
+
+.title-btn:hover {
+    background-color: #FFFDF5;
+    color:#6C757D;
+}
+
+.title-btn-two {
+    padding: 12px 80px;
+    color:#6C757D;
+}
+
+.title-btn-two:hover {
+    background-color: #569573;
+    color: #FFFFFF;
+}
+
+
+
+.plan-card {
+    border: 1px solid #E8E3DA;
+  }
+  .plan-card:hover {
+    border: 2px solid  #569573;
+  }
+
+
+  .plan-card-two {
+    border: 2px solid  #569573;
+  }
+  .plan-card-two:hover {
+    border: 1px solid #E8E3DA;
+  }
+
+
+.plan-btn {
+    background-color:#F8F9FA;
+    color: #6C757D;
+}
+
+
+.plan-btn:hover {
+    background-color: #569573;
+    color: #FFFFFF;
+  }
+
+
+.plan-btn-two {
+    background-color: #569573;
+    color: #FFFFFF;
+}
+
+.plan-btn-two:hover {
+    background-color:#F8F9FA;
+    color: #6C757D;
+}
+
+@media (max-width: 768px){
+    .title-btn {
+        padding: 12px 0px;
+        width: 50%;
+    }
+    .title-btn-two {
+        padding: 12px 0px;
+        width: 50%;
+    }
+}

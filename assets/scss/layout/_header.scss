@@ -1,0 +1,32 @@
+
+.input-group {
+  max-width: 276px;
+  border: 1px solid #dee2e6;
+  border-radius: 100px;
+}
+
+.input-group-text {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.form-control {
+  border: none;
+}
+
+.input-group:focus-within .search-text {
+  color: #212529;
+  font-weight: bold;
+}
+#search:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 992px){ 
+  .input-group {
+    max-width: 100%;
+  }
+}
